@@ -1,0 +1,43 @@
+package clases;
+
+public class Persona {
+	
+	private String nombre;
+	//private Perro perro;
+	
+	
+	
+	
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public Persona(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
+
+	public Persona(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public String quieroUnPerro(){
+		Perro unPerro = new Perro("Toby", "Pointer", (short) 25);
+		
+		
+		return "Toma Perro: "+ unPerro;
+	}
+	
+	public String quieroUnPerro(Perro perro){
+		
+		
+		return "Toma Perro" +perro;
+	}
+
+}

@@ -1,0 +1,9 @@
+package alcance2;
+
+public class OtraMas {
+
+	public OtraMas() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

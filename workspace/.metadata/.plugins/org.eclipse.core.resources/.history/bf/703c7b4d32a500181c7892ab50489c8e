@@ -1,0 +1,91 @@
+package ejercicio2;
+
+public class ProductPart1 {
+
+	// a) Número de elemento
+	// b) Nombre del producto
+	// c) Número de unidades en existencias
+	// d) Precio de cada unidad
+	/*
+	 * 3. Cree dos constructores: 
+	 * a) Un constructor por defecto sin parámetros
+	 * que inicializará las variables numéricas con ceros y variables String con
+	 * valores nulos.
+	 *  b)
+	 *  Sobrecargue el constructor por defecto y cree un
+	 * constructor con parámetros para las cuatro variables de instancia
+	 * mencionadas en el punto 
+	 * 2 anterior que puedan inicializar el objeto con
+	 * valores del probador. 
+	 * 4. Escriba los métodos de acceso (getter) y
+	 * mutadores (setter) para las cuatro variables de la instancia. 
+	 * 5.
+	 * Sustituya el método toString() de la clase de objeto que mostrará una
+	 * descripción de cada objeto que incluye los valores de variable.
+	 */
+
+	private int numeroDeElementos;
+	private String nombreDelProducto;
+	private int numeroDeExistencias;
+	private double precioDeCadaUnidad;
+	
+	public ProductPart1() {
+	this.numeroDeElementos=0;
+	this.nombreDelProducto=null;
+	this.numeroDeExistencias=0;
+	this.precioDeCadaUnidad=0d;
+	}
+
+	public ProductPart1(int numeroDeElementos, String nombreDelProducto,
+			int numeroDeExistencias, double precioDeCadaUnidad) {
+		this.numeroDeElementos = numeroDeElementos;
+		this.nombreDelProducto = nombreDelProducto;
+		this.numeroDeExistencias = numeroDeExistencias;
+		this.precioDeCadaUnidad = precioDeCadaUnidad;
+	}
+
+	public int getNumeroDeElementos() {
+		return numeroDeElementos;
+	}
+
+	public void setNumeroDeElementos(int numeroDeElementos) {
+		this.numeroDeElementos = numeroDeElementos;
+	}
+
+	public String getNombreDelProducto() {
+		return nombreDelProducto;
+	}
+
+	public void setNombreDelProducto(String nombreDelProducto) {
+		this.nombreDelProducto = nombreDelProducto;
+	}
+
+	public int getNumeroDeExistencias() {
+		return numeroDeExistencias;
+	}
+
+	public void setNumeroDeExistencias(int numeroDeExistencias) {
+		this.numeroDeExistencias = numeroDeExistencias;
+	}
+
+	public double getPrecioDeCadaUnidad() {
+		return precioDeCadaUnidad;
+	}
+
+	public void setPrecioDeCadaUnidad(double precioDeCadaUnidad) {
+		this.precioDeCadaUnidad = precioDeCadaUnidad;
+	}
+
+	@Override
+	public String toString() {
+		return "Productos \n" 
+				+"  · numeroDeElementos=" + numeroDeElementos +"\n"
+				+ " · nombreDelProducto=" + nombreDelProducto +"\n"
+				+ " · numeroDeExistencias=" + numeroDeExistencias +"\n"
+				+ " · precioDeCadaUnidad=" + precioDeCadaUnidad;
+	}
+	
+	
+	
+
+}

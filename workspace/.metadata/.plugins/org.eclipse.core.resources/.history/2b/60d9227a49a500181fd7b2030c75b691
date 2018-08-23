@@ -1,0 +1,44 @@
+package ejercicio3;
+
+public class Soporte {
+	// Variables de clase
+	public String titulo;
+	protected String numero;
+	private double precio;
+	
+	//Constructor con parametros
+	public Soporte(String titulo, String numero, double precio) {
+		super();
+		this.titulo = titulo;
+		this.numero = numero;
+		this.precio = precio;
+	}
+	// Metodo que devuelve el precio sin el iba
+	public double damePrecioSinIva(){
+		
+		return 0;
+	}
+	//Precio que devuelve el precio con el iva
+	public double damePrecioConIva(){
+		
+		return 0;
+	}
+	//precio que devuelve el numero de identificacion
+	public String dameNumeroIdentificacion(){
+		
+		return null;
+	}
+
+	// Metodo que imprime todas las caracteristicas
+	public String imprimeCaracteristicas() {
+		return "Soporte [titulo=" + titulo + ", numero=" + numero + ", precio="
+				+ precio + "]";
+	}
+	
+	
+	
+	
+	
+	
+
+}

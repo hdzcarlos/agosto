@@ -1,0 +1,16 @@
+package lanzaderas;
+
+import clases.Persona;
+
+public class UsarPersona {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Persona p = new Persona();
+
+	}
+
+}

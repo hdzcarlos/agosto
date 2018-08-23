@@ -1,0 +1,63 @@
+package ejercicio2;
+
+import java.util.Scanner;
+
+
+public class LanzaProducto2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		//Primer producto
+		System.out.println("Introduzca el numero de elementos de este producto:");
+		int id = sc.nextInt();
+		System.out.println("Introduzca el nombre del elemento");
+		String nombre = sc.next();
+		System.out.println("Introduzca La cantidad de stock que tenemos en tienda");
+		int stock = sc.nextInt();
+		System.out.println("Introduzca el precio del producto");
+		double precio = sc.nextDouble();
+		ProductPart2 product1 = new ProductPart2(id,nombre,stock,precio);
+		product1.calcularPrecioDeCadaProducto(stock, precio);
+		
+		//Segundo producto
+		
+		System.out.println("Introduzca el numero de elementos de este producto:");
+		int id2 = sc.nextInt();
+		System.out.println("Introduzca el nombre del elemento");
+		String nombre2 = sc.next();
+		System.out.println("Introduzca La cantidad de stock que tenemos en tienda");
+		int stock2 = sc.nextInt();
+		System.out.println("Introduzca el precio del producto");
+		double precio2 = sc.nextDouble();
+		ProductPart2 product2 = new ProductPart2(id2,nombre2,stock2,precio2);
+		product2.calcularPrecioDeCadaProducto(stock2, precio2);
+		
+		
+		
+		
+		/*
+		ProductPart2 product3 = new ProductPart2(2,"Frigorifico",5,100.0);
+		ProductPart2 product4 = new ProductPart2(100,"Servilletas",500,50.00d);
+		ProductPart2 product5 = new ProductPart2(5,"Horno",30,600.00d);
+		ProductPart2 product6 = new ProductPart2(1,"Micro-ondas",1000,80.00);
+		
+		
+		
+	
+		System.out.println(product3);
+		System.out.println(product4);
+		System.out.println(product5);
+		System.out.println(product6);
+		*/
+		System.out.println(product1);
+		System.out.println(product2);
+//
+		
+		//
+	}
+
+}

@@ -1,0 +1,42 @@
+package condicionales;
+
+import java.util.Scanner;
+
+public class SelectCase {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		int dia;
+		int edad =0;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escriba un numero de la semana");
+		dia = sc.nextInt();
+		// Se puede hacer un if dentro de la condicion del switch se puede hacer un ternario
+		//switch ((dia>0 && edad<18)?1:2)
+		switch (dia) {
+		case 1:
+			System.out.println("Es Lunes");
+			break;
+		case 2:
+			System.out.println("Es martes");
+			break;
+		case 3:
+			System.out.println("Es Miercoles");
+			break;
+		case 4:
+			System.out.println("Es Jueves");
+			break;
+		case 5:
+			System.out.println("Es Viernes");
+			break;
+
+		default:
+			System.out.println("Fin de semana");
+		}
+	}
+
+}

@@ -1,0 +1,44 @@
+package ejercicio2;
+
+import java.util.Scanner;
+
+
+public class LanzaProducto2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Scanner sc = Scanner(System.in);
+		
+		System.out.println("Introduzca el numero de elementos de este producto:");
+		int id = sc.nextInt();
+		System.out.println("Introduzca el nombre del elemento");
+		String nombre = sc.next();
+		System.out.println("Introduzca La cantidad de stock que tenemos en tienda");
+		int stock = sc.nextInt();
+		System.out.println("Introduzca el precio del producto");
+		double precio = sc.nextDouble();
+		
+		
+		ProductPart2 product1 = new ProductPart2();
+		ProductPart2 product2 = new ProductPart2();
+		ProductPart2 product3 = new ProductPart2(2,"Frigorifico",5,100.0);
+		ProductPart2 product4 = new ProductPart2(100,"Servilletas",500,50.00d);
+		ProductPart2 product5 = new ProductPart2(5,"Horno",30,600.00d);
+		ProductPart2 product6 = new ProductPart2(1,"Micro-ondas",1000,80.00);
+		
+		
+		
+		System.out.println(product1);
+		System.out.println(product2);
+		System.out.println(product3);
+		System.out.println(product4);
+		System.out.println(product5);
+		System.out.println(product6);
+		
+
+	}
+
+}

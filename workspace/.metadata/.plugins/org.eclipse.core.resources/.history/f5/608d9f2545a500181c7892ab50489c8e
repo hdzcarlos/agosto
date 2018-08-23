@@ -1,0 +1,9 @@
+package ejercicio3;
+
+public class LanzaderaVideoCLub {
+	
+	CintaVideo cinta=new CintaVideo("Los goonies","10010",12,120);
+    Juego juego=new Juego("World of Warcraft", "20221", 64.90, "PC", 1, 10);
+    Dvd dvd=new Dvd("El ultimo samurai", "30021", 29.90, "Español,Japones", "Panoramico");
+
+}

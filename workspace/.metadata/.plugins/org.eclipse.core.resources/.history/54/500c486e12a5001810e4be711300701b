@@ -1,0 +1,14 @@
+package clases;
+
+public class Cliente {
+
+		private int idCliente;
+		private String nombre;
+		
+		//Constructor
+		public Cliente(int idCliente, String nombre) {
+			this.idCliente = idCliente;
+			this.nombre = nombre;
+		}
+	
+}

@@ -1,0 +1,28 @@
+package ejercicio2;
+
+public class LanzaProducto {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ProductPart2 product1 = new ProductPart2();
+		ProductPart2 product2 = new ProductPart2();
+		ProductPart2 product3 = new ProductPart2(2,"Frigorifico",5,100.0);
+		ProductPart2 product4 = new ProductPart2(100,"Servilletas",500,50.00d);
+		ProductPart2 product5 = new ProductPart2(5,"Horno",30,600.00d);
+		ProductPart2 product6 = new ProductPart2(1,"Micro-ondas",1000,80.00);
+		
+		
+		
+		System.out.println(product1);
+		System.out.println(product2);
+		System.out.println(product3);
+		System.out.println(product4);
+		System.out.println(product5);
+		System.out.println(product6);
+		
+
+	}
+
+}

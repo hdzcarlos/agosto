@@ -1,0 +1,23 @@
+package clases;
+
+public class Persona {
+	
+	private String nombre;
+	//private Perro perro;
+	
+
+	
+	public String quieroUnPerro(){
+		Perro unPerro = new Perro("Toby", "Pointer", (short) 25);
+		
+		
+		return "Toma Perro: "+ unPerro;
+	}
+	
+	public String quieroUnPerro(Perro perro){
+		
+		
+		return "Toma Perro" +perro;
+	}
+
+}

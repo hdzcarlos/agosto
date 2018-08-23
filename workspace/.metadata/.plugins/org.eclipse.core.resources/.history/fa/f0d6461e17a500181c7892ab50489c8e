@@ -1,0 +1,37 @@
+package bucles;
+
+import clases.Cliente;
+
+public class Bucles {
+	
+	public static void main(String[] args) {
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("Hola Mundo");
+			
+		}
+		int[] enteros = {23,3,45,8,12};
+		// int[] enteros = new int[5];
+		Cliente c1 = new Cliente(1, "Antonio");
+		Cliente c2 = new Cliente(2, "Jose");
+		Cliente c3 = new Cliente(3, "Pedro");
+		
+		Cliente[] clientes = {c1,c2,c3};
+		for (Cliente cliente : clientes) {
+			System.out.println("El id" + cliente.getIdCliente());
+			System.out.println("El nombre"+ cliente.getNombre());
+			
+		}
+		
+		for (int i = 0; i <=enteros.length-1; i++) {
+			System.out.println(enteros[i]);
+			
+		}
+		for (int i : enteros) {
+			System.out.println(enteros[i]);
+			
+		}
+		
+	}
+	
+
+}

@@ -1,0 +1,61 @@
+package clases;
+
+public class Cliente {
+
+		private int idCliente;
+		private String nombre;
+		
+		//Constructor
+		public Cliente(int idCliente, String nombre) {
+			this.idCliente = idCliente;
+			this.nombre = nombre;
+		}
+		
+		// Compara 1 objeto con otro para saber si es de ese tipo una vez comprobado
+		// se realiza la comparación ejecutando un casting.
+		public boolean equals(Object obj){
+			if(obj instanceof Cliente){
+				
+				Cliente c = (Cliente)obj;
+				
+				if(c.getIdCliente()==this.idCliente && c.getNombre().equals(this.nombre)){
+					return true;
+				}
+			}else{
+				
+			return false;
+			}
+			return false;
+		}
+
+		/**
+		 * @return the idCliente
+		 */
+		public int getIdCliente() {
+			return idCliente;
+		}
+
+		/**
+		 * @param idCliente the idCliente to set
+		 */
+		public void setIdCliente(int idCliente) {
+			this.idCliente = idCliente;
+		}
+
+		/**
+		 * @return the nombre
+		 */
+		public String getNombre() {
+			return nombre;
+		}
+
+		/**
+		 * @param nombre the nombre to set
+		 */
+		public void setNombre(String nombre) {
+			this.nombre = nombre;
+		}
+		
+		
+	
+}

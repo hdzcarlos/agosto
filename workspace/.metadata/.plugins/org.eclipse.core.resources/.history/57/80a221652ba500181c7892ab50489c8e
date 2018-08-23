@@ -1,0 +1,27 @@
+package herencia;
+
+public class Jefe extends Empleado{
+	
+	private double incentivos;
+
+	public Jefe(double incentivos) {
+		this.incentivos = incentivos;
+	}
+
+	public double getIncentivos() {
+		return incentivos;
+	}
+
+	public void setIncentivos(double incentivos) {
+		this.incentivos = incentivos;
+	}
+
+	@Override
+	public String quienSoy() {
+		return super.quienSoy()+" y ademas Soy un jefe";
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,21 @@
+package lanzaderas;
+
+import herencia.Empleado;
+import herencia.Jefe;
+
+public class UsarEmpleado {
+	
+	public static void main(String[] args) {
+		
+		Empleado empleado = new Empleado();
+		Empleado empleado2 = new Empleado();
+		Empleado jefe = new Jefe(2000);
+		
+		System.out.println(empleado.quienSoy());
+		System.out.println(empleado2.quienSoy());
+		System.out.println(jefe.quienSoy());
+	
+		
+	}
+
+}

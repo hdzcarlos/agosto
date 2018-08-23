@@ -1,0 +1,71 @@
+package ejercicio2;
+
+import java.util.Scanner;
+
+
+public class LanzaProducto2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ProductPart2 producto;
+		
+		ProductPart2 product = new ProductPart2();
+		Scanner sc = new Scanner(System.in);
+		//Primer producto
+		System.out.println("Introduzca el numero de identificacion del elemento:");
+		int id = sc.nextInt();
+		product.setNumeroDeElementos(id);
+		System.out.println("Introduzca el nombre del elemento");
+		String nombre = sc.next();
+		product.setNombreDelProducto(nombre);
+		System.out.println("Introduzca La cantidad de stock que tenemos en tienda");
+		int stock = sc.nextInt();
+		product.setNumeroDeExistencias(stock);
+		System.out.println("Introduzca el precio del producto");
+		double precio = sc.nextDouble();
+		product.setPrecioDeCadaUnidad(precio);
+		
+		//product1.calcularPrecioDeCadaProducto(stock, precio);
+		
+		//Segundo producto
+		ProductPart2 product2 = new ProductPart2();
+		System.out.println("Introduzca el numero de elementos de este producto:");
+		int id2 = sc.nextInt();
+		product2.setNumeroDeElementos(id2);
+		System.out.println("Introduzca el nombre del elemento");
+		String nombre2 = sc.next();
+		product2.setNombreDelProducto(nombre2);
+		System.out.println("Introduzca La cantidad de stock que tenemos en tienda");
+		int stock2 = sc.nextInt();
+		product2.setNumeroDeExistencias(stock2);
+		System.out.println("Introduzca el precio del producto");
+		double precio2 = sc.nextDouble();
+		product2.setPrecioDeCadaUnidad(precio2);
+		
+		product.calcularPrecioDeCadaProducto();
+		product2.calcularPrecioDeCadaProducto();
+		
+		
+		
+		
+		/*
+		ProductPart2 product3 = new ProductPart2(2,"Frigorifico",5,100.0);
+		ProductPart2 product4 = new ProductPart2(100,"Servilletas",500,50.00d);
+		ProductPart2 product5 = new ProductPart2(5,"Horno",30,600.00d);
+		ProductPart2 product6 = new ProductPart2(1,"Micro-ondas",1000,80.00);
+		
+		
+		
+	
+		System.out.println(product3);
+		System.out.println(product4);
+		System.out.println(product5);
+		System.out.println(product6);
+		*/
+		System.out.println(product);
+		System.out.println(product2);
+	}
+
+}

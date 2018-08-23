@@ -1,0 +1,14 @@
+package fundamentalesdeJava;
+
+public class LanzaProducto {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ProductPart1 product = new ProductPart1();
+		product.toString();
+
+	}
+
+}
